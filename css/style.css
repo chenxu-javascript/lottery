@@ -124,7 +124,7 @@ aside .switch {
 .award-main {
     margin-top: 1.5rem;
 }
-#award-01,#award-02,#award-03 {
+#award-01,#award-02,#award-03,#award-04,#award-05 {
     display: none;
 }
 .award-con {
@@ -188,23 +188,23 @@ aside .switch {
     height: 4rem;
     border-radius: 100%;
 }
-#award-04 {
+#award-06 {
     display: none;
 }
 
-#award-04 .win .name {
+#award-06 .win .name {
     line-height: 3rem;
     font-size: 1.8rem;
 }
-#award-04 .win .avatar img {
+#award-06 .win .avatar img {
     width: 3rem;
     height: 3rem;
 }
-#award-04 .win .win-li {
+#award-06 .win .win-li {
     margin: 0 auto 0 auto;
 }
 
-#award04-toggle {
+#award06-toggle {
     display: none;
     width: 50%;
     margin: 1rem auto 1rem auto;
@@ -584,10 +584,16 @@ aside .switch {
 .dashboard .cirle-btn:nth-child(2) {
     left: 22%;
 }
-.dashboard .cirle-btn:nth-child(4) {
-    right: 22%;
+.dashboard .cirle-btn:nth-child(3) {
+    left: 29%;
 }
 .dashboard .cirle-btn:nth-child(5) {
+    right: 29%;
+}
+.dashboard .cirle-btn:nth-child(6) {
+    right: 22%;
+}
+.dashboard .cirle-btn:nth-child(7) {
     right: 15%;
 }
 .award-active {

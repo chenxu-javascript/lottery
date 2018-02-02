@@ -38,12 +38,14 @@ var lottery_initial_datas =[
         {
         "nameen": "avatar8",
         "namezh": "刘洁",
-        "wish": "新年快乐，祝2018年北京新鸥鹏大展宏图，狗年大吉。"
+        "wish": "新年快乐，祝2018年北京新鸥鹏大展宏图，狗年大吉。",
+        "isSpecial": 2,
         },
         {
         "nameen": "avatar9",
         "namezh": "何小飞",
-        "wish": "新年快乐，祝2018年北京新鸥鹏大展宏图，狗年大吉。"
+        "wish": "新年快乐，祝2018年北京新鸥鹏大展宏图，狗年大吉。",
+        "isSpecial": 6,
         },
         {
         "nameen": "avatar10",
@@ -58,31 +60,33 @@ var lottery_initial_datas =[
         {
         "nameen": "avatar12",
         "namezh": "林俊程",
-        "wish": "祝新鸥鹏新年新气象，鹏程万里！！！"
+        "wish": "祝新鸥鹏新年新气象，鹏程万里！！！",
+        "isSpecial": 6,
         },
         {
         "nameen": "avatar13",
         "namezh": "王树春",
         "wish": "在新的一年，祝公司财运滚滚，事业旺旺，祝大家身体棒棒的"
-        }
+      },
+      {
+      "nameen": "avatar14",
+      "namezh": "吴建友",
+      "wish": "岁月不居，天道酬勤。过去的一年里，我们历经风雨，尽管道路坎坷，尽管困难重重，但却成绩辉煌！新的一年又至，更需大家努力，携手共创奇迹！祝大家身体健康、阖家幸福、喜事多多、好运连连！"
+    }
 ];
 
 
 // 奖品个数
 var award_config = {
-    "award00": 1,
     "award01": 1,
-    "award02": 2,
-    "award03": 3,
-    "award04": 6
+    "award02": 1,
+    "award03": 1,
+    "award04": 2,
+    "award05": 3,
+    "award06": 6
 };
 
-// 初始化数据
-if (!localStorage.getItem('lottery_initial')) {
-    var data_str = JSON.stringify(lottery_initial_datas);
-    localStorage.setItem('lottery_initial', data_str);
-}
-if (!localStorage.getItem('award_initial')) {
-    var award_str = JSON.stringify(award_config);
-    localStorage.setItem('award_initial', award_str);
+export {
+  lottery_initial_datas,
+  award_config
 }

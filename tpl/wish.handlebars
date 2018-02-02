@@ -1,0 +1,20 @@
+{{#each lottery_datas as |item|}}
+  <div class="clearfix lottery-list" data-id="" data-special="{{item.isSpecial}}" data-namezh="{{item.namezh}}" data-nameen="{{item.nameen}}">
+      <div class="f-l turqoise lottery-avatar">
+          <img src="./img/avatars/{{item.nameen}}.jpg" alt="{{item.namezh}}">
+      </div>
+      <div class="f-l lottery-content">
+          <em class="beauty border-01"></em>
+          <em class="beauty border-02"></em>
+          <em class="beauty border-03"></em>
+          <em class="beauty border-04"></em>
+          <div class="border bor-top"></div>
+          <div class="border bor-bottom"></div>
+          <h3 class="content-title"> <span class="lottery-name">{{item.namezh}}</span> &nbsp;&nbsp;<span class="company">[ 新鸥鹏 ]</span></h3>
+          <div class="content-detail">
+              <b>新年愿景及祝福：</b>
+              <span>{{item.wish}}</span>
+          </div>
+      </div>
+  </div>
+{{/each}}
